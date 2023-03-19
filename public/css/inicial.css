@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: #c8a2c8;
+    height: 100vh;
+}
+
+body > h1 {
+    margin-bottom: 10px;
+}
+
+.concluido {
+    font-weight: bolder;
+    text-decoration: line-through;
+}
+
+#botao-logout{
+        background-color:rgba(127, 255, 212, 0.489);
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 50px;
+        width: 120px;
+        transition: .5s;
+        cursor: pointer;
+        font-size: larger;
+}
+
+#botao-logout:hover{
+    background-color:rgba(127, 255, 212, 0.489);
+    border: 1px solid black;
+    border-radius: 20px;
+    scale: 1.1;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 50vw;
+    border: 1px solid black;
+    box-shadow: 8px 12px 0px 0px black;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-right: -30px;
+}
+
+#form-tarefa {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-tarefa input{
+    margin: 10px;
+    width: 15vw;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0 10px;
+    background-color: #E8F0FE;
+}
+
+#espaco-tarefa {
+    margin-top: 10px;
+    height: 75%;
+    width: 90%;
+    overflow-y: scroll;
+}
+
+#espaco-tarefa::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+#espaco-tarefa::-webkit-scrollbar-thumb {
+    background-color: #866786d3;
+    border-radius: 20px;
+}
+
+.tarefinhas {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.735);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    margin: 10px 0;
+    width: 30px;
+    height: 30px;
+}
+
+.tarefinhas p {
+    width: 50%;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.tarefinhas > div {
+    width: 13%;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.barra-vertical {
+    height: 50px;
+    width: 1px;
+    border: 0px;
+    background-color: #000000;
+}
+
+button[type="submit"]{
+    background-color:rgba(127, 255, 212, 0.489);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color:rgba(127, 255, 212, 0.489);
+    border: 1px solid black;
+    border-radius: 20px;
+    scale: 1.1;
+}
+
+h1{
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+}
+
+.botao-deletar{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(242, 113, 113, 0.829);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.botao-deletar:hover{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    background-color: rgba(255, 0, 0, 0.829);
+    scale: 1.1s;
+}

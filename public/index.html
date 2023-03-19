@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Início - Agenda</title>
+</head>
+<body>
+    
+<fieldset id="fieldset">
+    <legend>Bem-vindo à Agenda Organizada</legend>
+    <div id="bot-login-cadastro">
+        <h1>Não possui conta?</h1>
+        <button id="botCadastro" type="button">CADASTRAR</button>
+        
+        <h1>Já possui conta?</h1>
+        <button id="botLogin">LOGIN</button>    
+
+    </div>
+</fieldset>    
+
+<form class="cadastro-login" id="cadastro">
+    <!-- Cadastro -->
+    <label>Seu email:</label>
+    <input type="text" placeholder="Ex.: jv@maria" id="email">
+    
+    <label>Sua senha:</label>
+    <input type="password" placeholder="*****" id="senha">
+    
+    <label>Confirme sua senha:</label>
+    <input type="password" placeholder="*****" id="confSenha">
+
+    <button type="submit">CADASTRAR</button>
+</form>
+    
+<form class="cadastro-login" id="login">
+    <!-- LOGIN --> 
+    <label>Seu email:</label>
+    <input type="text" placeholder="Ex.: jv@maria" id="email-log">
+    
+    <label>Sua senha:</label>
+    <input type="password" placeholder="*****" id="senha-log">
+    
+    <button type="submit">ENTRAR</button>
+</form>
+
+
+<script src="js/scripts.js" type="module"></script>
+</body>
+</html>
